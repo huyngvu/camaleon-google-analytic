@@ -1,0 +1,36 @@
+{
+  "title": "Google Analytics",
+  "descr": "",
+  "version": "0.2",
+  "key": "camaleon_google_analytic",
+  "helpers": [
+    "Plugins::CamaleonGoogleAnalytic::MainHelper"
+  ],
+  "options": [
+    {
+      "label": "Settings",
+      "url": "admin_plugin_camaleon_google_analytic_settings_path",
+      "eval_url": true
+    }
+  ],
+  "hooks": {
+    "on_destroy": [
+      "google_analytic_on_destroy"
+    ],
+    "on_active": [
+      "camaleon_google_analytic_on_active"
+    ],
+    "on_inactive": [
+      "camaleon_google_analytic_on_inactive"
+    ],
+    "on_upgrade": [
+      "camaleon_google_analytic_on_upgrade"
+    ],
+    "front_before_load": [
+      "google_analytic_front_before_load"
+    ],
+    "plugin_options": [
+      "google_analytic_plugin_options"
+    ]
+  }
+}

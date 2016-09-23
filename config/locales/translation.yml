@@ -1,0 +1,20 @@
+en:
+  plugin:
+    camaleon_google_analytic:
+      settings:
+        link_name: 'Settings'
+        title: 'Google analytics settings'
+      form:
+        code: 'Tracking ID'
+      messages:
+        settings_saved: 'Settings saved!'
+es:
+  plugin:
+    camaleon_google_analytic:
+      settings:
+        link_name: 'Preferencias'
+        title: 'Configuración de Google Analytics'
+      form:
+        code: 'Tracking ID'
+      messages:
+        settings_saved: '¡Configuración guardada!'
