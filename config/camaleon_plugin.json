@@ -1,7 +1,7 @@
 {
   "title": "Google Analytics",
   "descr": "",
-  "version": "0.2",
+  "version": "0.1",
   "key": "camaleon_google_analytic",
   "helpers": [
     "Plugins::CamaleonGoogleAnalytic::MainHelper"
@@ -31,6 +31,9 @@
     ],
     "plugin_options": [
       "google_analytic_plugin_options"
+    ],
+    "admin_before_load": [
+      "google_analytic_admin_before_load"
     ]
   }
 }

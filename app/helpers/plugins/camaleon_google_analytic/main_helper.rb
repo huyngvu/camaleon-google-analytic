@@ -32,6 +32,11 @@ module Plugins::CamaleonGoogleAnalytic::MainHelper
     end
   end
 
+  def google_analytic_admin_before_load
+    google_analytic_menu = { icon: "google", title: "Google Analytic", url: admin_plugins_camaleon_google_analytic_settings_path }
+    admin_menu_append_menu_item('settings', google_analytic_menu)
+  end
+
   def google_analytic_plugin_options(arg)
     arg[:links] << link_to(t('plugin.camaleon_google_analytic.settings.link_name'), admin_plugins_camaleon_google_analytic_settings_path)
   end
